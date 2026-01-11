@@ -1,0 +1,31 @@
+.o_dynamic_helper_icon {
+  cursor: help;
+  margin-right: 5px; /* Space between icon and field input */
+  color: #017e84; /* Matches Odoo Teal usually, or user preference */
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover {
+    color: #005c61;
+  }
+}
+
+.o_dynamic_helper_popover {
+  max-width: 300px;
+  padding: 10px;
+  font-size: 13px;
+  background: white;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  z-index: 1050;
+}
+/* 
+   Ideally, we want the field widget container to be flex to align icon + input.
+   Since we injected the icon inside the field component (which is usually a div or span),
+   making it flex ensures they sit side-by-side cleanly.
+*/
+.o_field_widget:has(.o_dynamic_helper_icon) {
+  display: inline-flex !important;
+  align-items: center;
+}

@@ -1,0 +1,27 @@
+/** @odoo-module **/
+
+/* 
+    Dark Mode Overrides 
+    Odoo bundles this separately in web.assets_web_dark 
+*/
+
+.o_dynamic_helper_icon {
+  /* Brighter Cyan for visibility on dark backgrounds */
+  color: #26c6da !important;
+
+  &:hover {
+    color: #4dd0e1 !important;
+  }
+}
+
+.o_dynamic_helper_popover {
+  background-color: #262a2d !important; /* Standard Dark Mode BG */
+  color: #e9ecef !important; /* Light Text */
+  border: 1px solid #454546 !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+
+  /* Ensure links inside popover are also visible */
+  a {
+    color: #4dd0e1 !important;
+  }
+}

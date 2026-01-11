@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_dynamic_helper_test" model="ir.ui.view">
+        <field name="name">res.partner.form.dynamic.helper.test</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+             <field name="function" position="after">
+                <field name="dynamic_helper_test"/>
+            </field>
+        </field>
+    </record>
+</odoo>
