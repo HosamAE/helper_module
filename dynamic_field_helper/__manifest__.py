@@ -19,6 +19,11 @@ Key Capabilities:
   3. Full QWeb Template support with responsive Bootstrap design.
 * Native Dark Mode: Dedicated dark token styling in web.assets_web_dark.
 * Pure & Lightweight: Zero external dependencies, pure OWL 2.0 component.
+
+Interactive Demo & Examples:
+-----------------------------
+Looking for live interactive examples? Check out 'dynamic_field_helper_demo' on Odoo App Store:
+https://apps.odoo.com/apps/modules/19.0/dynamic_field_helper_demo/
 """,
     'author': 'HosamAE',
     'maintainer': 'HosamAE',
