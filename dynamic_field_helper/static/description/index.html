@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Field Helper for Odoo 19.0</title>
+</head>
+<body>
+<section class="container py-5" style="font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #1E293B; max-width: 1100px;">
+
+    <!-- HERO SECTION -->
+    <div class="text-center p-5 mb-5 rounded-4 shadow-sm" style="background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%); color: #FFFFFF; border: 1px solid #4338CA;">
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px;">
+            <i class="fa fa-bolt text-warning"></i> ODOO 19.0 COMPATIBLE • COMMUNITY &amp; ENTERPRISE
+        </div>
+        <h1 class="display-5 fw-bold mb-3" style="letter-spacing: -0.5px;">Dynamic Field Helper</h1>
+        <p class="lead mx-auto mb-4" style="max-width: 780px; color: #E0E7FF; font-size: 1.15rem; line-height: 1.6;">
+            Transform static field tooltips into intelligent, real-time calculated popovers with dynamic Python logic, in-memory draft evaluation, and rich OWL components.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <span class="badge px-3 py-2 rounded-pill text-bg-light fs-6 fw-semibold text-primary"><i class="fa fa-check-circle me-1 text-success"></i> Zero Stale Cache</span>
+            <span class="badge px-3 py-2 rounded-pill text-bg-light fs-6 fw-semibold text-primary"><i class="fa fa-check-circle me-1 text-success"></i> Pure OWL 2.0</span>
+            <span class="badge px-3 py-2 rounded-pill text-bg-light fs-6 fw-semibold text-primary"><i class="fa fa-check-circle me-1 text-success"></i> 4 Size Presets (SM-XL)</span>
+            <span class="badge px-3 py-2 rounded-pill text-bg-light fs-6 fw-semibold text-primary"><i class="fa fa-check-circle me-1 text-success"></i> Draft In-Memory Eval</span>
+        </div>
+    </div>
+
+    <!-- MAIN BANNER -->
+    <div class="mb-5 text-center">
+        <div class="p-2 rounded-4 bg-white shadow-sm border">
+            <img src="banner.png" alt="Dynamic Field Helper Banner" class="img-fluid rounded-3 w-100" style="max-height: 520px; object-fit: cover;">
+        </div>
+    </div>
+
+    <!-- VALUE PILLARS (KEY FEATURES) -->
+    <div class="mb-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-dark">Why Dynamic Field Helper?</h2>
+            <p class="text-muted">Built from the ground up for high-performance Odoo 18 architectures.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm transition-all">
+                    <div class="d-inline-flex p-3 rounded-3 mb-3" style="background: #EEF2FF; color: #4F46E5; font-size: 1.5rem;">
+                        <i class="fa fa-bolt"></i>
+                    </div>
+                    <h5 class="fw-bold text-dark">Real-Time On-Demand</h5>
+                    <p class="text-muted small mb-0">Never relies on stale stored database strings. Fetches live computation dynamically via RPC on hover or click.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm transition-all">
+                    <div class="d-inline-flex p-3 rounded-3 mb-3" style="background: #ECFDF5; color: #059669; font-size: 1.5rem;">
+                        <i class="fa fa-keyboard"></i>
+                    </div>
+                    <h5 class="fw-bold text-dark">Draft &amp; Dirty Form Support</h5>
+                    <p class="text-muted small mb-0">Calculates accurate help data using in-memory unsaved field values as users type without requiring prior record saving.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm transition-all">
+                    <div class="d-inline-flex p-3 rounded-3 mb-3" style="background: #FEF3C7; color: #D97706; font-size: 1.5rem;">
+                        <i class="fa fa-th-large"></i>
+                    </div>
+                    <h5 class="fw-bold text-dark">Tri-Mode Architecture</h5>
+                    <p class="text-muted small mb-0">Supports: 1) Simple HTML/Text strings, 2) Auto-generated sleek Key-Value cards from Python dictionaries, and 3) Custom QWeb Templates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 SIZE ARCHITECTURES & SCREENSHOTS -->
+    <div class="mb-5 p-4 p-md-5 rounded-4 bg-light border">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">Flexible Sizes &amp; Responsive Layouts</h2>
+            <p class="text-muted">Choose from 4 pre-configured sizes or define custom pixel dimensions.</p>
+        </div>
+
+        <div class="row g-4 align-items-center mb-4 pb-4 border-bottom">
+            <div class="col-lg-6">
+                <span class="badge text-bg-primary mb-2">Preset: SM</span>
+                <h4 class="fw-bold text-dark">Compact Mini Popover</h4>
+                <p class="text-muted">Ideal for quick live values, system clocks, status badges, or simple formula explanations.</p>
+                <code class="d-block p-3 rounded-3 bg-dark text-light small">
+                    helper_field = fields.Char(helper="_calc_sm", helper_size="sm")
+                </code>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="screenshot_size_sm.png" alt="Size SM Preview" class="img-fluid rounded-3 shadow-sm border bg-white p-1">
+            </div>
+        </div>
+
+        <div class="row g-4 align-items-center mb-4 pb-4 border-bottom">
+            <div class="col-lg-6 order-lg-2">
+                <span class="badge text-bg-primary mb-2">Preset: MD (Default)</span>
+                <h4 class="fw-bold text-dark">Automatic Dictionary Card</h4>
+                <p class="text-muted">Return any Python dictionary from your model method and get an auto-formatted, modern key-value dashboard.</p>
+                <code class="d-block p-3 rounded-3 bg-dark text-light small">
+                    def _calc_md(self):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return {'Score': '95%', 'Status': 'Active'}
+                </code>
+            </div>
+            <div class="col-lg-6 order-lg-1 text-center">
+                <img src="screenshot_size_md.png" alt="Size MD Preview" class="img-fluid rounded-3 shadow-sm border bg-white p-1">
+            </div>
+        </div>
+
+        <div class="row g-4 align-items-center mb-4 pb-4 border-bottom">
+            <div class="col-lg-6">
+                <span class="badge text-bg-primary mb-2">Preset: LG</span>
+                <h4 class="fw-bold text-dark">KPI Grid &amp; Progress Bars</h4>
+                <p class="text-muted">Render responsive multi-column KPI grids, trust scores, and visual progress bars via standard QWeb templates.</p>
+                <code class="d-block p-3 rounded-3 bg-dark text-light small">
+                    helper_size="lg", helper_template="my_module.my_popover_template"
+                </code>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="screenshot_size_lg.png" alt="Size LG Preview" class="img-fluid rounded-3 shadow-sm border bg-white p-1">
+            </div>
+        </div>
+
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <span class="badge text-bg-primary mb-2">Preset: XL</span>
+                <h4 class="fw-bold text-dark">Executive 360 Analytics Card</h4>
+                <p class="text-muted">Full-fledged popover dashboard showing revenue summaries, invoice statuses, customer ratings, and live charts.</p>
+                <code class="d-block p-3 rounded-3 bg-dark text-light small">
+                    helper_size="xl", helper_template="my_module.dashboard_qweb"
+                </code>
+            </div>
+            <div class="col-lg-6 order-lg-1 text-center">
+                <img src="screenshot_size_xl.png" alt="Size XL Preview" class="img-fluid rounded-3 shadow-sm border bg-white p-1">
+            </div>
+        </div>
+    </div>
+
+    <!-- DEVELOPER QUICKSTART GUIDE -->
+    <div class="mb-5 bg-white p-4 p-md-5 rounded-4 border shadow-sm">
+        <h3 class="fw-bold text-dark mb-3"><i class="fa fa-code text-primary me-2"></i>Developer Quickstart (Python ORM)</h3>
+        <p class="text-muted mb-4">Adding dynamic help to any existing or new field requires zero JavaScript coding:</p>
+
+        <div class="p-3 rounded-3 bg-dark text-light font-monospace small mb-4">
+<pre class="m-0" style="color: #E2E8F0;">
+<span style="color: #F472B6;">from</span> odoo <span style="color: #F472B6;">import</span> fields, models
+
+<span style="color: #F472B6;">class</span> <span style="color: #38BDF8;">SaleOrder</span>(models.Model):
+    _inherit = <span style="color: #A7F3D0;">'sale.order'</span>
+
+    credit_check_helper = fields.Char(
+        string=<span style="color: #A7F3D0;">"Customer Risk"</span>,
+        helper=<span style="color: #A7F3D0;">"_get_customer_risk_helper"</span>,
+        helper_size=<span style="color: #A7F3D0;">"md"</span>, <span style="color: #94A3B8;"># sm, md, lg, xl, or custom helper_width="450px"</span>
+    )
+
+    <span style="color: #F472B6;">def</span> <span style="color: #60A5FA;">_get_customer_risk_helper</span>(self):
+        <span style="color: #94A3B8;"># 'self' has access to in-memory draft values!</span>
+        <span style="color: #F472B6;">return</span> {
+            <span style="color: #A7F3D0;">'Customer'</span>: self.partner_id.name <span style="color: #F472B6;">or</span> <span style="color: #A7F3D0;">'Draft'</span>,
+            <span style="color: #A7F3D0;">'Unpaid Invoices'</span>: len(self.partner_id.invoice_ids.filtered(<span style="color: #F472B6;">lambda</span> i: i.state == <span style="color: #A7F3D0;">'posted'</span>)),
+            <span style="color: #A7F3D0;">'Total Amount'</span>: f<span style="color: #A7F3D0;">"{self.amount_total:,.2f} {self.currency_id.symbol}"</span>,
+        }
+</pre>
+        </div>
+    </div>
+
+    <!-- AUTHOR / SUPPORT FOOTER -->
+    <div class="p-5 rounded-4 text-center text-white" style="background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%); border: 1px solid #312E81;">
+        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 fw-bold" style="width: 72px; height: 72px; background: #4F46E5; font-size: 2rem; border: 3px solid rgba(255,255,255,0.2);">
+            HE
+        </div>
+        <h3 class="fw-bold mb-1 text-white">Hossam Eldeen Eissa</h3>
+        <p class="text-indigo-200 mb-2" style="color: #A5B4FC; font-size: 1.05rem;">Senior Odoo Architect &amp; Technical Consultant</p>
+        <p class="text-muted small mx-auto mb-4" style="max-width: 600px; color: #94A3B8 !important;">
+            Specialized in enterprise Odoo architecture, high-performance module engineering, performance audits, and bespoke workflow automation.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="mailto:hossamA.Eissa@gmail.com" class="btn btn-primary px-4 py-2 rounded-3 fw-semibold" style="background: #4F46E5; border: none;">
+                <i class="fa fa-envelope me-2"></i>Email Support
+            </a>
+            <a href="https://www.linkedin.com/in/hossameldeen-eissa/" target="_blank" class="btn btn-light px-4 py-2 rounded-3 fw-semibold text-primary">
+                <i class="fa fa-linkedin me-2"></i>LinkedIn Profile
+            </a>
+        </div>
+        <div class="mt-4 pt-3 border-top border-secondary text-muted small" style="border-color: rgba(255,255,255,0.1) !important; color: #64748B !important;">
+            Dynamic Field Helper Suite for Odoo 19.0 • Developed with precision by Hossam Eldeen Eissa.
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
+
