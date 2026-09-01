@@ -1,6 +1,6 @@
-# 💡 Dynamic Field Helper Suite for Odoo 18.0
+# 💡 Dynamic Field Helper Suite for Odoo 17.0
 
-> **Target Framework:** Odoo 18.0 Community & Enterprise  
+> **Target Framework:** Odoo 17.0 Community & Enterprise  
 > **Author:** [Hossam Eldeen Eissa](https://www.linkedin.com/in/hossameldeen-eissa/)  
 > **Email:** [hossamA.Eissa@gmail.com](mailto:hossamA.Eissa@gmail.com)  
 > **License:** LGPL-3  
