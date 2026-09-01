@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Field Helper Suite for Odoo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #4F46E5;
+            --primary-light: #EEF2FF;
+            --secondary: #0891B2;
+            --bg: #F8FAFC;
+            --surface: #FFFFFF;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-card: 0 10px 25px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
+        .container { max-width: 1050px; margin: 40px auto; padding: 0 20px; }
+        .hero {
+            text-align: center;
+            background: #FFFFFF;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 48px 24px;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow);
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            border: 1px solid #C7D2FE;
+        }
+        .hero h1 { font-size: 2.6rem; font-weight: 800; color: #0F172A; margin-bottom: 12px; }
+        .hero p { font-size: 1.1rem; color: var(--text-muted); max-width: 760px; margin: 0 auto; }
+
+        .branches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .branch-card {
+            background: #FFFFFF;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-card);
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        .branch-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+        }
+        .branch-card h3 { font-size: 1.3rem; font-weight: 700; color: #0F172A; margin-bottom: 8px; }
+        .branch-card p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .btn:hover { background: #4338CA; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <span class="hero-badge"><i class="fa-solid fa-code-branch"></i> Multi-Version Repository</span>
+            <h1>Dynamic Field Helper Suite for Odoo</h1>
+            <p>Smart, live-calculated field helper framework supporting Odoo 19.0, 18.0, and 17.0 Community &amp; Enterprise.</p>
+        </div>
+
+        <h2 style="text-align:center; margin-bottom:24px; font-size:1.6rem;">Available Version Branches</h2>
+
+        <div class="branches-grid">
+            <div class="branch-card">
+                <div style="font-size:2rem; color:var(--primary); margin-bottom:10px;"><i class="fa-solid fa-rocket"></i></div>
+                <h3>Odoo 19.0 Branch</h3>
+                <p>Latest cutting-edge release with pure OWL 2.0 components and full draft in-memory calculations.</p>
+                <a href="https://github.com/HosamAE/helper_module/tree/19.0" class="btn"><i class="fa-brands fa-github"></i> View 19.0 Branch</a>
+            </div>
+
+            <div class="branch-card">
+                <div style="font-size:2rem; color:var(--secondary); margin-bottom:10px;"><i class="fa-solid fa-bolt"></i></div>
+                <h3>Odoo 18.0 Branch</h3>
+                <p>Full support for Odoo 18.0 Community &amp; Enterprise with zero stale caching and 4 size presets.</p>
+                <a href="https://github.com/HosamAE/helper_module/tree/18.0" class="btn"><i class="fa-brands fa-github"></i> View 18.0 Branch</a>
+            </div>
+
+            <div class="branch-card">
+                <div style="font-size:2rem; color:#059669; margin-bottom:10px;"><i class="fa-solid fa-check-double"></i></div>
+                <h3>Odoo 17.0 Branch</h3>
+                <p>Full support for Odoo 17.0 LTS with click-to-pin, smart flipping arrows, and native dark mode.</p>
+                <a href="https://github.com/HosamAE/helper_module/tree/17.0" class="btn"><i class="fa-brands fa-github"></i> View 17.0 Branch</a>
+            </div>
+        </div>
+
+        <!-- Developer Marketing Card -->
+        <div style="background: linear-gradient(135deg, #1E1B4B 0%, #0F172A 100%); border: 1px solid #312E81; border-radius: 18px; padding: 32px 24px; color: #FFFFFF; text-align: center; box-shadow: 0 12px 30px rgba(0,0,0,0.25);">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 50%; background: #4F46E5; color: #FFFFFF; font-size: 1.8rem; font-weight: 800; margin-bottom: 16px; border: 3px solid rgba(255,255,255,0.2);">
+                HE
+            </div>
+            <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 6px; color: #FFFFFF;">Hossam Eldeen Eissa</h3>
+            <p style="color: #A5B4FC; font-size: 0.95rem; max-width: 550px; margin: 0 auto 20px;">
+                Senior Odoo Architect &amp; Full-Stack Consultant. Available for custom Odoo enterprise implementations, performance tuning, and custom modules development.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                <a href="mailto:hossamA.Eissa@gmail.com" style="display: inline-flex; align-items: center; gap: 8px; background: #4F46E5; color: #FFFFFF; text-decoration: none; padding: 10px 22px; border-radius: 10px; font-weight: 600; font-size: 0.92rem;">
+                    <i class="fa-solid fa-envelope"></i> Contact via Email
+                </a>
+                <a href="https://www.linkedin.com/in/hossameldeen-eissa/" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: #0A66C2; color: #FFFFFF; text-decoration: none; padding: 10px 22px; border-radius: 10px; font-weight: 600; font-size: 0.92rem;">
+                    <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                </a>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 24px; padding-top: 16px; font-size: 0.82rem; color: #94A3B8;">
+                © 2026 Hossam Eldeen Eissa. All Rights Reserved. Dynamic Field Helper Suite.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

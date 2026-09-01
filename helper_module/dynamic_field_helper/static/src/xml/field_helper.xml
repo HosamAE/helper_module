@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- Template for the Icon itself -->
+    <t t-name="dynamic_field_helper.Icon">
+        <i class="fa fa-question-circle o_dynamic_helper_icon" 
+           t-on-mouseenter="onMouseEnter" 
+           t-on-mouseleave="onMouseLeave"
+           role="img" 
+           aria-label="Dynamic Help"/>
+    </t>
+
+    <!-- Template for the Popover Content -->
+    <t t-name="dynamic_field_helper.PopoverContent">
+         <div class="o_dynamic_helper_popover">
+            <t t-if="props.loading">
+                <i class="fa fa-spinner fa-spin"/> Loading...
+            </t>
+            <t t-else="">
+                <t t-out="props.content"/>
+            </t>
+         </div>
+    </t>
+
+    <!-- Inherit generic Field template to inject the icon -->
+    <t t-inherit="web.Field" t-inherit-mode="extension">
+        <xpath expr="//t[@t-component='field.component']" position="before">
+            <t t-if="hasDynamicHelper">
+                <DynamicHelperIcon record="props.record" fieldName="props.name" />
+            </t>
+        </xpath>
+    </t>
+
+</templates>
