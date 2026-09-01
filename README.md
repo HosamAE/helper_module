@@ -1,7 +1,7 @@
-# 💡 Dynamic Field Helper Suite for Odoo 19.0
+# 💡 Dynamic Field Helper Suite for Odoo 18.0
 
-> **Target Framework:** Odoo 19.0 Community & Enterprise  
-> **Author:** [Hossam Eldeen Eissa](https://www.linkedin.com/in/hossameldeen-eissa/)  
+> **Target Framework:** Odoo 18.0 Community & Enterprise  
+> **Author:** [HosamAE](https://www.linkedin.com/in/hossameldeen-eissa/)  
 > **Email:** [hossamA.Eissa@gmail.com](mailto:hossamA.Eissa@gmail.com)  
 > **License:** LGPL-3  
 > Transform static field help strings into interactive, live-calculated, on-the-fly popovers.
@@ -79,7 +79,7 @@ def _get_vip_data(self):
 
 ## 👨‍💻 Developer & Author
 
-* **Author:** [Hossam Eldeen Eissa](https://www.linkedin.com/in/hossameldeen-eissa/)
+* **Author:** [HosamAE](https://www.linkedin.com/in/hossameldeen-eissa/)
 * **Email:** [hossamA.Eissa@gmail.com](mailto:hossamA.Eissa@gmail.com)
 * **LinkedIn:** [https://www.linkedin.com/in/hossameldeen-eissa/](https://www.linkedin.com/in/hossameldeen-eissa/)
 * **Available for:** Odoo Enterprise Implementation, Custom Module Development, Performance Optimization & Consulting.
