@@ -4,123 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Field Helper Demo &amp; Examples for Odoo 18.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<section class="container py-5" style="font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #1E293B; max-width: 1100px;">
+<section class="container py-5" style="font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #1E293B; max-width: 1100px; margin: 0 auto; padding: 20px;">
 
-    <!-- HERO SECTION -->
-    <div class="text-center p-5 mb-5 rounded-4 shadow-sm" style="background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #312E81 100%); color: #FFFFFF; border: 1px solid #312E81;">
-        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px;">
-            <i class="fa fa-flask text-warning"></i> LIVE INTERACTIVE DEMO &amp; EXAMPLES • ODOO 18.0
-        </div>
-        <h1 class="display-5 fw-bold mb-3" style="letter-spacing: -0.5px;">Dynamic Field Helper (Demo Suite)</h1>
-        <p class="lead mx-auto mb-4" style="max-width: 780px; color: #E0E7FF; font-size: 1.15rem; line-height: 1.6;">
-            Interactive, ready-to-test examples demonstrating real-time calculated popovers on standard Contacts (<code style="color: #93C5FD; background: rgba(255,255,255,0.1); padding: 2px 6px; rounded: 4px;">res.partner</code>).
-        </p>
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
-            <span class="badge px-3 py-2 rounded-pill text-bg-light fs-6 fw-semibold text-primary"><i class="fa fa-check-circle me-1 text-success"></i> Simple String Mode</span>
-            <span class="badge px-3 py-2 rounded-pill text-bg-light fs-6 fw-semibold text-primary"><i class="fa fa-check-circle me-1 text-success"></i> Auto Dictionary Card</span>
-            <span class="badge px-3 py-2 rounded-pill text-bg-light fs-6 fw-semibold text-primary"><i class="fa fa-check-circle me-1 text-success"></i> Custom QWeb Template</span>
-        </div>
-    </div>
-
-    <!-- CALLOUT: CORE MODULE REQUIRED -->
-    <div class="mb-5 p-4 rounded-4 shadow-sm border" style="background: #EEF2FF; border-color: #C7D2FE !important;">
+    <!-- MANDATORY REQUIREMENT ALERT BANNER -->
+    <div class="mb-4 p-4 rounded-4 shadow-sm" style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); border: 2px solid #EF4444;">
         <div class="row align-items-center g-3">
             <div class="col-lg-8">
                 <div class="d-flex align-items-center gap-3">
-                    <div class="p-3 rounded-circle" style="background: #4F46E5; color: #FFFFFF; font-size: 1.5rem;">
-                        <i class="fa fa-cube"></i>
+                    <div class="p-3 rounded-circle" style="background: #DC2626; color: #FFFFFF; font-size: 1.6rem; min-width: 54px; text-align: center;">
+                        <i class="fa fa-exclamation-triangle"></i>
                     </div>
                     <div>
-                        <h4 class="fw-bold mb-1" style="color: #1E1B4B;">Core Framework Module</h4>
-                        <p class="mb-0 text-muted" style="font-size: 0.95rem;">
-                            This module provides interactive examples. The main engine is <strong>Dynamic Field Helper</strong> (<code style="color: #4338CA;">dynamic_field_helper</code>).
+                        <h4 class="fw-bold mb-1" style="color: #991B1B;">IMPORTANT: Core Module Required!</h4>
+                        <p class="mb-0" style="color: #7F1D1D; font-size: 0.95rem; line-height: 1.5;">
+                            This module (<strong>dynamic_field_helper_demo</strong>) is an <strong>Interactive Example Suite</strong> and <u>strictly requires</u> the base framework module <strong>Dynamic Field Helper</strong> (<strong>dynamic_field_helper</strong>) to be installed.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 text-lg-end text-center">
-                <a href="https://apps.odoo.com/apps/modules/18.0/dynamic_field_helper/" target="_blank" class="btn btn-primary px-4 py-3 rounded-3 fw-bold shadow-sm" style="background: #4F46E5; border: none; font-size: 1rem;">
-                    <i class="fa fa-external-link me-2"></i>Get Core Module
+                <a href="https://apps.odoo.com/apps/modules/18.0/dynamic_field_helper/" target="_blank" class="btn btn-danger px-4 py-3 rounded-3 fw-bold shadow-sm" style="background: #DC2626; border: none; font-size: 1rem; text-decoration: none; color: #FFFFFF; display: inline-block;">
+                    <i class="fa fa-download me-2"></i>Get Core Module
                 </a>
             </div>
         </div>
     </div>
 
+    <!-- HERO SECTION -->
+    <div class="text-center p-5 mb-5 rounded-4 shadow-sm" style="background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #312E81 100%); color: #FFFFFF; border: 1px solid #312E81;">
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px;">
+            <i class="fa fa-flask text-warning"></i> LIVE INTERACTIVE DEMO &amp; EXAMPLES &bull; ODOO 18.0
+        </div>
+        <h1 class="display-5 fw-bold mb-3" style="letter-spacing: -0.5px; font-size: 2.5rem;">Dynamic Field Helper (Demo Suite)</h1>
+        <p class="lead mx-auto mb-4" style="max-width: 780px; color: #E0E7FF; font-size: 1.15rem; line-height: 1.6;">
+            Interactive, ready-to-test examples demonstrating real-time calculated popovers on standard Contacts (<code style="color: #93C5FD; background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px;">res.partner</code>).
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+            <span class="badge px-3 py-2 rounded-pill bg-light text-primary fw-semibold" style="padding: 8px 16px; border-radius: 20px; background: #FFFFFF; color: #4338CA; font-size: 0.9rem;"><i class="fa fa-check-circle me-1 text-success"></i> Mode 1: Simple String</span>
+            <span class="badge px-3 py-2 rounded-pill bg-light text-primary fw-semibold" style="padding: 8px 16px; border-radius: 20px; background: #FFFFFF; color: #4338CA; font-size: 0.9rem;"><i class="fa fa-check-circle me-1 text-success"></i> Mode 2: Auto Dictionary Card</span>
+            <span class="badge px-3 py-2 rounded-pill bg-light text-primary fw-semibold" style="padding: 8px 16px; border-radius: 20px; background: #FFFFFF; color: #4338CA; font-size: 0.9rem;"><i class="fa fa-check-circle me-1 text-success"></i> Mode 3: QWeb Template</span>
+        </div>
+    </div>
+
     <!-- MAIN BANNER -->
     <div class="mb-5 text-center">
-        <div class="p-2 rounded-4 bg-white shadow-sm border">
-            <img src="banner.png" alt="Dynamic Field Helper Demo Banner" class="img-fluid rounded-3 w-100" style="max-height: 520px; object-fit: cover;">
+        <div class="p-2 rounded-4 bg-white shadow-sm border" style="background: #FFFFFF; border-radius: 16px; border: 1px solid #E2E8F0; padding: 8px;">
+            <img src="banner.png" alt="Dynamic Field Helper Demo Banner" class="img-fluid rounded-3 w-100" style="max-height: 520px; width: 100%; object-fit: cover; border-radius: 12px;">
         </div>
     </div>
 
     <!-- INCLUDED EXAMPLES SHOWCASE -->
-    <div class="mb-5">
-        <div class="text-center mb-4">
-            <h2 class="fw-bold text-dark">What's Included in This Demo?</h2>
+    <div class="mb-5" style="margin-bottom: 40px;">
+        <div class="text-center mb-4" style="text-align: center; margin-bottom: 24px;">
+            <h2 class="fw-bold text-dark" style="font-size: 2rem; margin-bottom: 8px;">What's Included in This Demo?</h2>
             <p class="text-muted">Explore how different field types and help modes work on the Contact form (<code style="color: #4F46E5;">res.partner</code>).</p>
         </div>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm">
-                    <div class="d-inline-flex p-3 rounded-3 mb-3" style="background: #EEF2FF; color: #4F46E5; font-size: 1.5rem;">
+        <div class="row g-4" style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div class="col-md-4" style="flex: 1 1 300px;">
+                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px;">
+                    <div style="font-size: 1.8rem; color: #4F46E5; margin-bottom: 12px;">
                         <i class="fa fa-commenting"></i>
                     </div>
-                    <span class="badge text-bg-primary mb-2 d-block w-fit">Mode 1 • Size SM</span>
-                    <h5 class="fw-bold text-dark">Title Field Helper</h5>
-                    <p class="text-muted small mb-3">Live calculations showing partner honorifics, formal address strings, and language settings.</p>
-                    <img src="screenshot_size_sm.png" alt="Size SM Preview" class="img-fluid rounded-3 border mb-2">
+                    <span style="background: #EEF2FF; color: #4338CA; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; display: inline-block; margin-bottom: 8px;">Mode 1 &bull; Size SM</span>
+                    <h5 class="fw-bold text-dark" style="margin-bottom: 8px;">Title Field Helper</h5>
+                    <p class="text-muted small mb-3" style="color: #64748B; font-size: 0.9rem; margin-bottom: 12px;">Live calculations showing partner honorifics, formal address strings, and language settings.</p>
+                    <img src="screenshot_size_sm.png" alt="Size SM Preview" style="width: 100%; border-radius: 8px; border: 1px solid #E2E8F0;">
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm">
-                    <div class="d-inline-flex p-3 rounded-3 mb-3" style="background: #ECFDF5; color: #059669; font-size: 1.5rem;">
+            <div class="col-md-4" style="flex: 1 1 300px;">
+                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px;">
+                    <div style="font-size: 1.8rem; color: #059669; margin-bottom: 12px;">
                         <i class="fa fa-id-card"></i>
                     </div>
-                    <span class="badge text-bg-success mb-2 d-block w-fit">Mode 2 • Size MD</span>
-                    <h5 class="fw-bold text-dark">Phone &amp; Mobile Helper</h5>
-                    <p class="text-muted small mb-3">Auto-generated key-value dictionary card displaying international format, country prefix, and carrier detection.</p>
-                    <img src="screenshot_size_md.png" alt="Size MD Preview" class="img-fluid rounded-3 border mb-2">
+                    <span style="background: #ECFDF5; color: #065F46; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; display: inline-block; margin-bottom: 8px;">Mode 2 &bull; Size MD</span>
+                    <h5 class="fw-bold text-dark" style="margin-bottom: 8px;">Phone &amp; Mobile Helper</h5>
+                    <p class="text-muted small mb-3" style="color: #64748B; font-size: 0.9rem; margin-bottom: 12px;">Auto-generated key-value dictionary card displaying international format, country prefix, and carrier detection.</p>
+                    <img src="screenshot_size_md.png" alt="Size MD Preview" style="width: 100%; border-radius: 8px; border: 1px solid #E2E8F0;">
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm">
-                    <div class="d-inline-flex p-3 rounded-3 mb-3" style="background: #FEF3C7; color: #D97706; font-size: 1.5rem;">
+            <div class="col-md-4" style="flex: 1 1 300px;">
+                <div class="p-4 h-100 bg-white rounded-4 border shadow-sm" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px;">
+                    <div style="font-size: 1.8rem; color: #D97706; margin-bottom: 12px;">
                         <i class="fa fa-envelope-open"></i>
                     </div>
-                    <span class="badge text-bg-warning mb-2 d-block w-fit">Mode 3 • Size LG / XL</span>
-                    <h5 class="fw-bold text-dark">Email Verification QWeb</h5>
-                    <p class="text-muted small mb-3">Full QWeb template showing domain validation status, deliverability score, and gravatar thumbnail.</p>
-                    <img src="screenshot_size_lg.png" alt="Size LG Preview" class="img-fluid rounded-3 border mb-2">
+                    <span style="background: #FEF3C7; color: #92400E; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; display: inline-block; margin-bottom: 8px;">Mode 3 &bull; Size LG / XL</span>
+                    <h5 class="fw-bold text-dark" style="margin-bottom: 8px;">Email Verification QWeb</h5>
+                    <p class="text-muted small mb-3" style="color: #64748B; font-size: 0.9rem; margin-bottom: 12px;">Full QWeb template showing domain validation status, deliverability score, and gravatar thumbnail.</p>
+                    <img src="screenshot_size_lg.png" alt="Size LG Preview" style="width: 100%; border-radius: 8px; border: 1px solid #E2E8F0;">
                 </div>
             </div>
         </div>
     </div>
 
     <!-- AUTHOR / SUPPORT FOOTER -->
-    <div class="p-5 rounded-4 text-center text-white" style="background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%); border: 1px solid #312E81;">
-        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 fw-bold" style="width: 72px; height: 72px; background: #4F46E5; font-size: 1.75rem; border: 3px solid rgba(255,255,255,0.2);">
+    <div class="p-5 rounded-4 text-center text-white" style="background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%); border: 1px solid #312E81; border-radius: 20px; padding: 40px; text-align: center; color: #FFFFFF;">
+        <div style="display: inline-flex; align-items: center; justify-content: center; width: 72px; height: 72px; border-radius: 50%; background: #4F46E5; font-size: 1.75rem; font-weight: bold; border: 3px solid rgba(255,255,255,0.2); margin-bottom: 16px;">
             HA
         </div>
-        <h3 class="fw-bold mb-1 text-white">HosamAE</h3>
-        <p class="text-indigo-200 mb-2" style="color: #A5B4FC; font-size: 1.05rem;">Senior Odoo Architect &amp; Technical Consultant</p>
-        <p class="text-muted small mx-auto mb-4" style="max-width: 600px; color: #94A3B8 !important;">
+        <h3 class="fw-bold mb-1 text-white" style="font-size: 1.5rem; margin-bottom: 6px;">HosamAE</h3>
+        <p style="color: #A5B4FC; font-size: 1.05rem; margin-bottom: 12px;">Senior Odoo Architect &amp; Technical Consultant</p>
+        <p class="text-muted small mx-auto mb-4" style="max-width: 600px; color: #94A3B8 !important; margin: 0 auto 20px; font-size: 0.9rem;">
             Specialized in enterprise Odoo architecture, high-performance module engineering, and custom development.
         </p>
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
-            <a href="https://apps.odoo.com/apps/modules/18.0/dynamic_field_helper/" target="_blank" class="btn btn-primary px-4 py-2 rounded-3 fw-semibold" style="background: #4F46E5; border: none;">
+        <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+            <a href="https://apps.odoo.com/apps/modules/18.0/dynamic_field_helper/" target="_blank" class="btn btn-primary px-4 py-2 rounded-3 fw-semibold" style="background: #4F46E5; border: none; color: #FFFFFF; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 600;">
                 <i class="fa fa-cube me-2"></i>Main Module on Odoo Store
             </a>
-            <a href="mailto:hossamA.Eissa@gmail.com" class="btn btn-outline-light px-4 py-2 rounded-3 fw-semibold">
+            <a href="mailto:hossamA.Eissa@gmail.com" style="background: transparent; border: 1px solid rgba(255,255,255,0.4); color: #FFFFFF; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 600;">
                 <i class="fa fa-envelope me-2"></i>Email Support
             </a>
-            <a href="https://www.linkedin.com/in/hossameldeen-eissa/" target="_blank" class="btn btn-light px-4 py-2 rounded-3 fw-semibold text-primary">
+            <a href="https://www.linkedin.com/in/hossameldeen-eissa/" target="_blank" style="background: #0A66C2; border: none; color: #FFFFFF; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 600;">
                 <i class="fa fa-linkedin me-2"></i>LinkedIn Profile
             </a>
         </div>
-        <div class="mt-4 pt-3 border-top border-secondary text-muted small" style="border-color: rgba(255,255,255,0.1) !important; color: #64748B !important;">
-            Dynamic Field Helper Suite for Odoo 18.0 • Developed by HosamAE.
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 24px; padding-top: 16px; font-size: 0.85rem; color: #64748B;">
+            Dynamic Field Helper Suite for Odoo 18.0 &bull; Developed by HosamAE.
         </div>
     </div>
 
