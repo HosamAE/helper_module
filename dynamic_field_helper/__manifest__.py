@@ -20,8 +20,8 @@ Key Capabilities:
 * Native Dark Mode: Dedicated dark token styling in web.assets_web_dark.
 * Pure & Lightweight: Zero external dependencies, pure OWL 2.0 component.
 """,
-    'author': 'Hossam Eldeen Eissa',
-    'maintainer': 'Hossam Eldeen Eissa',
+    'author': 'HosamAE',
+    'maintainer': 'HosamAE',
     'website': 'https://www.linkedin.com/in/hossameldeen-eissa/',
     'support': 'hossamA.Eissa@gmail.com',
     'license': 'LGPL-3',
