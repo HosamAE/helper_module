@@ -2,7 +2,7 @@
 
 > **Official Repository:** [HosamAE/helper_module](https://github.com/HosamAE/helper_module)  
 > **Supported Versions:** Odoo 19.0 | Odoo 18.0 | Odoo 17.0 (Community & Enterprise)  
-> **Author:** [Hossam Eldeen Eissa](https://www.linkedin.com/in/hossameldeen-eissa/)  
+> **Author:** [HosamAE](https://www.linkedin.com/in/hossameldeen-eissa/)  
 > **Email:** [hossamA.Eissa@gmail.com](mailto:hossamA.Eissa@gmail.com)  
 > **License:** LGPL-3  
 
@@ -44,7 +44,7 @@
 
 ## 👨‍💻 Developer & Author
 
-* **Author:** [Hossam Eldeen Eissa](https://www.linkedin.com/in/hossameldeen-eissa/)
+* **Author:** [HosamAE](https://www.linkedin.com/in/hossameldeen-eissa/)
 * **Email:** [hossamA.Eissa@gmail.com](mailto:hossamA.Eissa@gmail.com)
 * **LinkedIn:** [https://www.linkedin.com/in/hossameldeen-eissa/](https://www.linkedin.com/in/hossameldeen-eissa/)
 * **Available for:** Odoo Enterprise Implementation, Custom Module Development, Performance Optimization & Consulting.
