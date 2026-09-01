@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
-import json
 from odoo import api, fields, models
-from odoo.tools.safe_eval import safe_eval
-
-# Register dynamic helper parameters in valid field parameters
-if hasattr(models.BaseModel, '_valid_field_parameter'):
-    models.BaseModel._valid_field_parameter.update(['helper', 'helper_template', 'helper_size', 'helper_width'])
 
 
 class Base(models.AbstractModel):
@@ -13,9 +7,7 @@ class Base(models.AbstractModel):
 
     @api.model
     def _valid_field_parameter(self, field, name):
-        if name in ('helper', 'helper_template', 'helper_size', 'helper_width'):
-            return True
-        return super()._valid_field_parameter(field, name)
+        return name in ('helper', 'helper_template', 'helper_size', 'helper_width') or super()._valid_field_parameter(field, name)
 
     @api.model
     def fields_get(self, allfields=None, attributes=None):
