@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Dynamic Field Helper (Demo & Examples)',
-    'version': '18.0.1.0.0',
+    'version': '17.0.1.0.0',
     'category': 'Productivity/Tools',
     'summary': 'Interactive examples showcasing Simple, Dictionary, and QWeb Dynamic Field Helpers.',
     'author': 'Hossam Eldeen Eissa',
