@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- Template for the Icon with click and hover handlers -->
+    <t t-name="dynamic_field_helper.Icon">
+        <i t-attf-class="fa fa-question-circle o_dynamic_helper_icon #{state.isPinned ? 'o_pinned' : ''}" 
+           t-on-mouseenter="onMouseEnter" 
+           t-on-mouseleave="onMouseLeave"
+           t-on-click="onClick"
+           role="button" 
+           aria-label="Dynamic Help"
+           title="Hover to view, Click to pin"/>
+    </t>
+
+    <!-- Template for the Popover Content with smart arrow positioning -->
+    <t t-name="dynamic_field_helper.PopoverContent">
+         <div t-ref="popoverRoot"
+              t-attf-class="o_dynamic_helper_popover #{props.sizeClass}"
+              t-att-style="props.customStyle"
+              t-on-mouseenter="props.onPopoverMouseEnter"
+              t-on-mouseleave="props.onPopoverMouseLeave">
+            <div class="o_dynamic_helper_arrow"/>
+            <t t-if="props.state.loading">
+                <div class="d-flex align-items-center gap-2 py-1 text-muted">
+                    <i class="fa fa-circle-o-notch fa-spin text-primary"/>
+                    <span>Calculating...</span>
+                </div>
+            </t>
+            <t t-else="">
+                <t t-out="props.state.content"/>
+            </t>
+         </div>
+    </t>
+
+    <!-- Inherit generic Field template -->
+    <t t-inherit="web.Field" t-inherit-mode="extension">
+        <xpath expr="//t[@t-component='field.component']" position="replace">
+            <t t-if="hasDynamicHelper">
+                <div class="d-flex align-items-center gap-1 w-100 o_dynamic_helper_wrapper">
+                    <div class="flex-grow-1 o_dynamic_helper_field_inner">
+                        <t t-component="field.component" t-props="fieldComponentProps"/>
+                    </div>
+                    <DynamicHelperIcon record="props.record" fieldName="props.name" />
+                </div>
+            </t>
+            <t t-else="">
+                <t t-component="field.component" t-props="fieldComponentProps"/>
+            </t>
+        </xpath>
+    </t>
+
+</templates>

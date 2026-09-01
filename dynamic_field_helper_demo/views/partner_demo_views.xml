@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- 1. Large Size Template: KPI Grid & Progress Bar -->
+    <template id="partner_qweb_kpi_popover">
+        <div class="p-1">
+            <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom">
+                <div>
+                    <h6 class="mb-0 fw-bold text-primary">
+                        <i class="fa fa-id-badge me-1"/> <t t-out="partner_name"/>
+                    </h6>
+                    <small class="text-muted">Live Time: <b class="text-success font-monospace" t-out="live_clock"/></small>
+                </div>
+                <span t-attf-class="badge #{'text-bg-warning' if is_company_partner else 'text-bg-info'}" t-out="status_label"/>
+            </div>
+
+            <!-- KPI 2-Column Grid -->
+            <div class="row g-2 mb-3">
+                <div class="col-6">
+                    <div class="o_helper_kpi_card">
+                        <div class="o_kpi_value text-primary"><t t-out="credit_score"/></div>
+                        <div class="o_kpi_label">Trust Score</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="o_helper_kpi_card">
+                        <div class="o_kpi_value text-success"><t t-out="credit_limit_str"/></div>
+                        <div class="o_kpi_label">Credit Limit</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar with Percentage -->
+            <div class="mt-2">
+                <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-muted">Credit Line Utilization:</span>
+                    <b class="text-dark"><t t-out="spent_str"/> (<t t-out="used_credit_pct"/>%)</b>
+                </div>
+                <div class="o_helper_progress_bar">
+                    <div class="o_helper_progress_fill bg-primary" t-attf-style="width: #{used_credit_pct}%;"/>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- 2. Extra Large Size Template: Executive 360 Dashboard -->
+    <template id="partner_qweb_dashboard_popover">
+        <div class="p-2">
+            <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom">
+                <div class="d-flex align-items-center gap-2">
+                    <div class="p-2 rounded-circle bg-primary bg-opacity-10 text-primary">
+                        <i class="fa fa-chart-pie fa-lg"/>
+                    </div>
+                    <div>
+                        <h6 class="mb-0 fw-bold text-dark"><t t-out="partner_name"/></h6>
+                        <small class="text-muted">Executive 360 Live Snapshot</small>
+                    </div>
+                </div>
+                <span class="badge text-bg-dark font-monospace"><i class="fa fa-sync fa-spin me-1"/> <t t-out="refreshed_at"/></span>
+            </div>
+
+            <!-- 4-Stat Metric Cards -->
+            <div class="row g-2 mb-3">
+                <div class="col-3">
+                    <div class="o_helper_kpi_card">
+                        <div class="o_kpi_value text-primary fs-6"><t t-out="total_sales"/></div>
+                        <div class="o_kpi_label">Revenue</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="o_helper_kpi_card">
+                        <div class="o_kpi_value text-warning fs-6"><t t-out="open_invoices"/></div>
+                        <div class="o_kpi_label">Open Inv.</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="o_helper_kpi_card">
+                        <div class="o_kpi_value text-success fs-6"><t t-out="paid_invoices"/></div>
+                        <div class="o_kpi_label">Paid Inv.</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="o_helper_kpi_card">
+                        <div class="o_kpi_value text-info fs-6"><t t-out="on_time_delivery"/></div>
+                        <div class="o_kpi_label">Delivery</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-2 rounded bg-light border d-flex align-items-center justify-content-between">
+                <span class="small text-muted"><i class="fa fa-star text-warning me-1"/> Customer Satisfaction:</span>
+                <b class="text-dark"><t t-out="satisfaction_rating"/> ⭐</b>
+            </div>
+        </div>
+    </template>
+
+    <!-- Partner Form View with All 4 Size & Shape Showcases -->
+    <record id="view_partner_form_dynamic_helper_demo" model="ir.ui.view">
+        <field name="name">res.partner.form.dynamic.helper.demo</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="dynamic_helper_demo" string="💡 Dynamic Helper Demo" autofocus="autofocus">
+                    <div class="alert alert-info d-flex align-items-center gap-2 mb-3" role="alert">
+                        <i class="fa fa-info-circle fa-lg"/>
+                        <div>
+                            <b>Dynamic Field Helper Size &amp; Shape Architecture:</b> Hover over each icon to preview different sizes (SM, MD, LG, XL) with rich UI components (Progress Bars, 2x2 KPI Grids, and 360 Analytics Cards).
+                        </div>
+                    </div>
+                    <group>
+                        <group string="Size SM (Compact Mini Popover)">
+                            <field name="helper_simple_demo"/>
+                        </group>
+                        <group string="Size MD (Auto Dict Card)">
+                            <field name="helper_dict_demo"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Size LG (KPI Grid &amp; Progress Bar)">
+                            <field name="helper_qweb_demo"/>
+                        </group>
+                        <group string="Size XL (Full 360 Dashboard Card)">
+                            <field name="helper_dashboard_demo"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Direct Window Action for Quick Access -->
+    <record id="action_partner_dynamic_helper_demo" model="ir.actions.act_window">
+        <field name="name">Dynamic Helper Demo</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'default_is_company': True}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Open any partner to test Dynamic Field Helpers with all sizes!
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item in Contacts / Top Menu -->
+    <menuitem id="menu_dynamic_helper_demo_root"
+              name="💡 Helper Demo"
+              action="action_partner_dynamic_helper_demo"
+              web_icon="dynamic_field_helper,static/description/icon.png"
+              sequence="99"/>
+
+</odoo>

@@ -1,0 +1,143 @@
+.o_dynamic_helper_wrapper {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+
+  .o_dynamic_helper_field_inner {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+.o_dynamic_helper_icon {
+  cursor: pointer;
+  color: #6366F1;
+  font-size: 1rem;
+  padding: 3px 5px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+
+  &:hover {
+    color: #4338CA;
+    background-color: #EEF2FF;
+    transform: scale(1.15);
+  }
+
+  &.o_pinned {
+    color: #FFFFFF !important;
+    background-color: #4F46E5 !important;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+  }
+}
+
+.o_dynamic_helper_popover {
+  position: relative;
+  min-width: 260px;
+  max-width: 360px;
+  padding: 12px 14px;
+  font-size: 13px;
+  background-color: #FFFFFF;
+  color: #1E293B;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.12), 0 6px 12px -4px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  z-index: 1055;
+  animation: helperFadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Smart Arrow */
+  .o_dynamic_helper_arrow {
+    position: absolute;
+    top: 14px;
+    width: 12px;
+    height: 12px;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    z-index: -1;
+    left: -6px;
+    border-left: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  &.o_placement_left .o_dynamic_helper_arrow {
+    left: auto !important;
+    right: -6px !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    border-right: 1px solid #E2E8F0 !important;
+    border-top: 1px solid #E2E8F0 !important;
+  }
+
+  /* Size Presets - Default is MD (Medium) */
+  &.o_helper_size_sm {
+    min-width: 180px;
+    max-width: 240px;
+    padding: 8px 12px;
+  }
+
+  &.o_helper_size_md {
+    min-width: 260px;
+    max-width: 360px;
+  }
+
+  &.o_helper_size_lg {
+    min-width: 380px;
+    max-width: 480px;
+    padding: 16px;
+  }
+
+  &.o_helper_size_xl {
+    min-width: 500px;
+    max-width: 640px;
+    padding: 18px;
+  }
+
+  /* Rich UI Components */
+  .o_helper_kpi_card {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 10px 12px;
+    text-align: center;
+
+    .o_kpi_value {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.2;
+    }
+    .o_kpi_label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #64748B;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .o_helper_progress_bar {
+    height: 8px;
+    background-color: #E2E8F0;
+    border-radius: 9999px;
+    overflow: hidden;
+    margin: 6px 0;
+
+    .o_helper_progress_fill {
+      height: 100%;
+      border-radius: 9999px;
+      transition: width 0.3s ease;
+    }
+  }
+}
+
+.o_dynamic_helper_dict_card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@keyframes helperFadeIn {
+  from { opacity: 0; transform: translateY(-4px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
