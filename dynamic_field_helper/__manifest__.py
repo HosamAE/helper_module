@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Dynamic Field Helper',
-    'version': '19.0.1.0.0',
+    'version': '18.0.1.0.0',
     'category': 'Productivity/Tools',
     'summary': 'Display dynamic, live-calculated help content for fields on-the-fly.',
     'description': """
-Dynamic Field Helper for Odoo 19.0
+Dynamic Field Helper for Odoo 18.0
 ===================================
 Transform static field help into interactive, real-time calculated popovers.
 
