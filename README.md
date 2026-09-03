@@ -3,7 +3,7 @@
 > **Target Framework:** Odoo 17.0 Community & Enterprise  
 > **Author:** [HosamAE](https://www.linkedin.com/in/hossameldeen-eissa/)  
 > **Email:** [hossamA.Eissa@gmail.com](mailto:hossamA.Eissa@gmail.com)  
-> **License:** LGPL-3  
+> **License:** Other proprietary (Free for Internal & Non-Commercial Use — Commercial Distribution Requires Authorization)
 > Transform static field help strings into interactive, live-calculated, on-the-fly popovers.
 
 ---
@@ -83,3 +83,14 @@ def _get_vip_data(self):
 * **Email:** [hossamA.Eissa@gmail.com](mailto:hossamA.Eissa@gmail.com)
 * **LinkedIn:** [https://www.linkedin.com/in/hossameldeen-eissa/](https://www.linkedin.com/in/hossameldeen-eissa/)
 * **Available for:** Odoo Enterprise Implementation, Custom Module Development, Performance Optimization & Consulting.
+
+---
+
+## 📜 License & Intellectual Property
+
+Copyright (c) 2024–present **Hossam Eldeen Eissa (HosamAE)**. All rights reserved.
+
+* **Free for Internal & Non-Commercial Use:** Free to install, use, and run for personal, educational, or internal company operations.
+* **Commercial Distribution Strictly Requires Prior Written Authorization:** You may NOT sell, resell, or bundle this module into commercial, paid, or client-billed applications without prior written agreement from the author.
+* **Mandatory Attribution:** Any authorized redistribution or reference must prominently credit the author: **Hossam Eldeen Eissa (HosamAE)** with a direct link to [this repository](https://github.com/HosamAE/helper_module).
+* For complete legal terms, see the [LICENSE](LICENSE) file.

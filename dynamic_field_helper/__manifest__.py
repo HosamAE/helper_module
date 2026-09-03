@@ -29,7 +29,7 @@ https://apps.odoo.com/apps/modules/17.0/dynamic_field_helper_demo/
     'maintainer': 'HosamAE',
     'website': 'https://www.linkedin.com/in/hossameldeen-eissa/',
     'support': 'hossamA.Eissa@gmail.com',
-    'license': 'LGPL-3',
+    'license': 'Other proprietary',
     'depends': ['web', 'base'],
     'images': [
         'static/description/banner.png',
