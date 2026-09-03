@@ -8,7 +8,7 @@
     'maintainer': 'HosamAE',
     'website': 'https://www.linkedin.com/in/hossameldeen-eissa/',
     'support': 'hossamA.Eissa@gmail.com',
-    'license': 'LGPL-3',
+    'license': 'Other proprietary',
     'depends': ['dynamic_field_helper', 'base'],
     'images': [
         'static/description/banner.png',
