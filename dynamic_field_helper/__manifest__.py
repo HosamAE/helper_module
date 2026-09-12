@@ -27,7 +27,6 @@ https://apps.odoo.com/apps/modules/18.0/dynamic_field_helper_demo/
 """,
     'author': 'HosamAE',
     'maintainer': 'HosamAE',
-    'website': 'https://www.linkedin.com/in/hossameldeen-eissa/',
     'support': 'hossamA.Eissa@gmail.com',
     'license': 'Other proprietary',
     'depends': ['web', 'base'],
