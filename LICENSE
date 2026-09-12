@@ -1,0 +1,79 @@
+# Software License & Intellectual Property Agreement
+## Dual Licensing: Free for Internal & Non-Commercial Use — Commercial Distribution Requires Authorization
+
+Copyright (c) 2024–present Hossam Eldeen Eissa (HosamAE). All rights reserved.
+
+Author & Copyright Holder: Hossam Eldeen Eissa
+Repository: https://github.com/HosamAE/helper_module
+Email: hossamA.Eissa@gmail.com
+LinkedIn: https://www.linkedin.com/in/hossameldeen-eissa/
+
+==============================================================================
+TERMS AND CONDITIONS OF LICENSE
+==============================================================================
+
+1. GRANT OF USE (FREE FOR INTERNAL & NON-COMMERCIAL USE):
+   Permission is hereby granted, free of charge, to any person or organization 
+   obtaining a copy of this software and associated documentation files (the "Software"), 
+   to install, execute, and use the Software internally for personal, educational, 
+   or organizational operational purposes, and in non-commercial open-source projects, 
+   subject to the conditions below.
+
+2. COMMERCIAL DISTRIBUTION & RESALE (PRIOR AUTHORIZATION REQUIRED):
+   - You may NOT sell, resell, lease, sublicense, or commercially distribute this 
+     Software as a standalone product or under a different name.
+   - You may NOT bundle, embed, or incorporate this Software (or any portion thereof) 
+     into any commercial, paid, or closed-source application, module, or suite sold 
+     to clients without prior written authorization or a commercial license agreement 
+     from the original author (Hossam Eldeen Eissa).
+   - Any commercial offering, deployment as a paid Odoo Apps Store product, or 
+     inclusion in commercial client contracts requires explicit permission. Contact:
+     hossamA.Eissa@gmail.com.
+
+3. MANDATORY ATTRIBUTION & ANTI-PLAGIARISM:
+   Any permitted redistribution, sharing, referencing, or reuse of this Software 
+   (or parts thereof) MUST prominently display and preserve:
+   a) The original author's name: Hossam Eldeen Eissa (HosamAE).
+   b) A direct link to the original repository: https://github.com/HosamAE/helper_module.
+   c) All original copyright headers, comments, author fields, and this complete 
+      LICENSE notice without alteration or deletion.
+   d) Renaming the author or claiming original authorship is strictly prohibited 
+      and constitutes an infringement of copyright and intellectual property laws.
+
+4. DERIVATIVE WORKS & FORKS:
+   You may modify and adapt the source code solely for your own internal use. Any 
+   published fork or derivative project must remain under these identical terms 
+   (Non-commercial without prior authorization, mandatory attribution to Hossam 
+   Eldeen Eissa).
+
+5. INTELLECTUAL PROPERTY OWNERSHIP:
+   All intellectual property rights, copyrights, trademarks, design rights, and trade 
+   secrets in and to the Software are and shall remain the exclusive property of 
+   Hossam Eldeen Eissa.
+
+6. DISCLAIMER OF WARRANTY:
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL 
+   THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM 
+   THE USE OR INABILITY TO USE THE SOFTWARE.
+
+==============================================================================
+ملخص اتفاقية الترخيص وحماية الملكية الفكرية (Arabic Summary)
+==============================================================================
+1. الاستخدام الداخلي والمجاني (Free for Internal Use):
+   - مجاني 100% لأي شخص أو شركة ترغب في تشغيل واستخدام الموديل لأنظمتها الداخلية، 
+     أو في مشاريع مجانية مفتوحة المصدر، مع الاحتفاظ بحقوق المؤلف وروابطه كاملة.
+
+2. البيع والتطبيقات التجارية المدفوعة (Commercial Sales):
+   - يُمنع منعاً باتاً بيع هذا الموديل منفرداً، أو إعادة طرحه كمنتج مدفوع على متجر أودو.
+   - يُمنع دمج هذا الموديل داخل أي تطبيق تجاري يباع للعملاء بمقابل مادي إلا بإذن 
+     كتابي صريح أو ترخيص تجاري مسبق من المؤلف (حسام الدين عيسى).
+
+3. إلزامية نسب الفضل ومنع انتحال الملكية (Mandatory Attribution):
+   - يمنع حذف اسم المؤلف أو تغيير حقول الـ Author في المانيفست أو إخفاء حقوق الملكية.
+   - أي استخدام مصرح به يجب أن يذكر بوضوح: المطور الأصلي (حسام الدين عيسى - HosamAE) 
+     ورابط المستودع الأصلي.
+
+4. الملكية الفكرية (Intellectual Property):
+   - كامل حقوق التأليف والملكية الفكرية للموديل محفوظة حصرياً للمهندس حسام الدين عيسى.

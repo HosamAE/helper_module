@@ -28,7 +28,7 @@ https://apps.odoo.com/apps/modules/17.0/dynamic_field_helper_demo/
     'author': 'HosamAE',
     'maintainer': 'HosamAE',
     'support': 'hossamA.Eissa@gmail.com',
-    'license': 'LGPL-3',
+    'license': 'Other proprietary',
     'depends': ['web', 'base'],
     'images': [
         'static/description/banner.png',
